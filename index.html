@@ -9,12 +9,13 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/fontawesome-free-web/fontawesome-free-web/css/all.css">
     </head>
     <body>
         <div class="container">
             <div class="container-esquerda">
                 <img src="images/beaver_bank.png
-                " alt="">
+                "alt="">
             </div>
             
             <div class="container-direita">
@@ -23,10 +24,21 @@
                         <p>Login</p>
                     </div>
                     <form action="submit" class="formulario">
-                        <input type="text" placeholder="Usuário" class="formulario-input">
-                        <input type="password" placeholder="Senha" class="formulario-input">
-                        <button class="botao-formulario">Entrar</button>
-                        <p></p>
+                        <div class="formulario-user">
+                            <i class="fa-regular fa-user"></i>
+                             <input type="text" placeholder="Usuário" class="formulario-input">
+                        </div>
+                       
+                        <div class="formulario-senha">
+                            <i class="fa-solid fa-key"></i>
+                            <input type="password" placeholder="Senha" class="formulario-input">
+                        </div>
+                        
+                        <div class="formulario-btn">
+                            <button class="botao-formulario">Entrar</button>
+                            <a href="html/cadastro.html" class="formulario-link"><p>Não tem um cadastro? Clique aqui</p></a>
+                        </div>
+                        
                     </form>
                 </div>
             </div>
