@@ -1,0 +1,11 @@
+.container-esquerda{
+    width: 50%;
+    height: 100%;
+    background-color: blue;
+}
+
+.container-direita{
+    width: 50%;
+    height: 100%;
+    background-color: red;
+}
