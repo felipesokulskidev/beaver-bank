@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Página de Cadastro</title>
+        <link rel="stylesheet" href="../css/cadastro.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../css/fontawesome-free-web/fontawesome-free-web/css/all.css">
+        <script defer src="../js/cadastro.js"></script>
+    </head>
+    <body>
+        <div class="cadastro">
+            <div class="cadastro-texto">
+                <p class="cadastro-texto-titulo">Bem-vindo ao Beager Bank!</p>
+                <p class="cadastro-texto-descricao">Faça sua conta e comece a aproveitar todos os nossos serviços. Explore desde simples propostas até as mais diversas aplicações e fundos de investimentos. Já tem uma conta? <a href="../index.html">Fazer login</a></p>
+            </div>
+            
+            <form action="submit" class="form">
+                <div class="cadastro-input-email">
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="email" placeholder="Email" class="cadastro-input-style">
+                </div>
+                <div class="cadastro-input-usuario">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" placeholder="Usuário" class="cadastro-input-style">
+                </div>
+                <div class="cadastro-input-senha">
+                    <i class="fa-solid fa-key"></i>
+                    <input type="password" placeholder="Senha" class="cadastro-input-style">
+                </div>
+            </form>
+
+            <div class="botao-cadastrar">
+                <div class="botao-cadastrar-esquerda">
+                    <button class="botao-cadastrar-btn" disabled id="botao">Cadastrar</button>
+                </div>
+
+                <div class="botao-cadastrar-direita">
+                    <input type="checkbox"class="checkbox" id="checkbox"> Eu concordo com os termos e condições e aceito receber notícias relacionadas à página.
+                </div>
+            </div>
+
+            
+    </body>
+</html>

@@ -79,7 +79,10 @@ html, body {
     flex-direction: column;
 }
 
-.formulario-user{
+
+.formulario-user,
+.formulario-email,
+.formulario-senha{
     height: 20%;
     width: 100%;
     display: flex;
@@ -88,14 +91,6 @@ html, body {
     color: var(--azul);
 }
 
-.formulario-senha{
-    height:20%;
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    color: var(--azul);
-}
 
 .formulario-btn{
     margin-top: 20px;
@@ -134,11 +129,13 @@ html, body {
     border: none;
     border-radius: 10px;
     font-family: Poppins;
+    transition: all 0.3s ease;
 }
 
 .botao-formulario:hover{
     background-color: var(--azul-escuro);
     cursor: pointer;
+    box-shadow: 0 0 10px rgba(31, 94, 203, 0.5);
 }
 
 

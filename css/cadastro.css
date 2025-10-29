@@ -1,0 +1,194 @@
+:root{
+    --azul: #1f5ecb;
+    --azul-escuro: #08326b;
+    --preto: #000000;
+    --branco: #FFFFFF;
+    --cinza: #808080;
+    --cinza-escuro: #404040;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+    width: 100%;
+    background: #1666f0;
+    background: radial-gradient(circle, rgba(22, 102, 240, 1) 0%, rgba(8, 50, 107, 1) 100%);    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cadastro{
+    width: 50%;
+    height:80%;
+    border: 1px solid var(--azul);
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background-color: var(--branco);
+}
+
+.cadastro-texto{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: justify;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.cadastro-texto-titulo{
+    font-family: Poppins;
+    font-size: 20px;
+    color: var(--azul);
+    font-weight: 400;
+}
+
+.cadastro-texto-descricao{
+    font-family: Poppins;
+    font-size: 14px;
+    color: var(--preto);
+    font-weight: 200;
+}
+
+.cadastro-texto-descricao a{
+    color: var(--azul);
+    text-decoration: none;
+}
+
+.cadastro-texto-descricao a:hover{
+    text-decoration:underline;
+}
+
+.form{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.cadastro-input-email,
+.cadastro-input-usuario,
+.cadastro-input-senha{
+    height: 40%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: var(--azul);
+}
+
+.cadastro-input-style{
+    border-radius: 5px;
+    width: 80%;
+    height: 70%;
+    border: 1px solid var(--azul);
+    padding-left: 5px;
+}
+
+.cadastro-input-style::placeholder{
+    color: var(--azul);
+    font-family: Poppins;
+}
+
+.cadastro-input-style:focus{
+    border: 2px solid var(--azul);
+    outline: none;
+}
+
+.botao-cadastrar{
+    height: 20%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.botao-cadastrar-esquerda
+{
+    width: 45%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.botao-cadastrar-direita{
+    width: 55%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-family: Poppins;
+    font-size: 14px;
+    color: var(--cinza);
+    text-align: left;
+    gap: 10px; /* espaço entre checkbox e texto */
+}
+
+.botao-cadastrar-btn{
+    height: 50%;
+    width: 70%;
+    background-color: var(--azul);
+    color: var(--branco);
+    border-radius: 10px;
+    font-family: Poppins;
+}
+
+.botao-cadastrar-btn {
+    height: 50%;
+    width: 70%;
+    background-color: var(--cinza);
+    color: var(--branco);
+    border-radius: 10px;
+    font-family: Poppins;
+    font-size: 16px;
+    border: none;
+    opacity: 0.6;
+    cursor: not-allowed;
+    transition: all 0.3s ease;
+}
+
+.botao-cadastrar-btn.ativo {
+    background-color: var(--azul);
+    opacity: 1;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(31, 94, 203, 0.5);
+}
+
+.botao-cadastrar-btn.ativo:hover {
+    background-color: var(--azul-escuro);
+}
+
+
+.checkbox{
+    appearance: none; /* remove o estilo padrão */
+    width: 50px;
+    height: 25px;
+    border: 2px solid var(--azul);
+    border-radius: 4px;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.checkbox:checked {
+    background-color: var(--azul);
+    border-color: var(--azul);
+}
+
+.checkbox:checked::after {
+    content: "✔";
+    color: white;
+    font-size: 12px;
+    position: absolute;
+    top: 3px;
+    left: 5px;
+}
+
