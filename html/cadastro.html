@@ -18,26 +18,25 @@
                 <p class="cadastro-texto-descricao">Faça sua conta e comece a aproveitar todos os nossos serviços. Explore desde simples propostas até as mais diversas aplicações e fundos de investimentos. Já tem uma conta? <a href="../index.html">Fazer login</a></p>
             </div>
             
-            <form action="submit" class="form">
+            <form method="POST" id="form-cadastro">
                 <div class="cadastro-input-email">
                     <i class="fa-solid fa-envelope"></i>
-                    <input type="email" placeholder="Email" class="cadastro-input-style">
+                    <input type="email" name="email" placeholder="Email" class="cadastro-input-style">
                 </div>
                 <div class="cadastro-input-usuario">
                     <i class="fa-solid fa-user"></i>
-                    <input type="text" placeholder="Usuário" class="cadastro-input-style">
+                    <input type="text" name="usuario" placeholder="Usuário" class="cadastro-input-style">
                 </div>
                 <div class="cadastro-input-senha">
                     <i class="fa-solid fa-key"></i>
-                    <input type="password" placeholder="Senha" class="cadastro-input-style">
+                    <input type="password"name="senha" placeholder="Senha" class="cadastro-input-style">
                 </div>
             </form>
 
             <div class="botao-cadastrar">
                 <div class="botao-cadastrar-esquerda">
-                    <a href="sucesso.html">
-                        <button class="botao-cadastrar-btn" disabled id="botao">Cadastrar</button>
-                    </a>
+                    <button type="button" class="botao-cadastrar-btn" disabled id="botao" onclick="cadastrar()">
+                    Cadastrar</button>
                 </div>
 
                 <div class="botao-cadastrar-direita">
