@@ -19,14 +19,33 @@
                 Login efetuado com sucesso!
             </div>
             <div class="texto-retorno">
-                Retornando para a página inicial em 5 segundos.
+                Retornando para a página inicial em <span id="tempo"></span> segundos.
             </div>
         </div>
 
         <script>
+
+            let tempoRestante = 5;
+
+            const elementoContador = document.getElementById("tempo");
+
+            function atualizarContador() {
+                
+                if (tempoRestante >= 1) {
+                    elementoContador.textContent = tempoRestante;
+
+                    tempoRestante--;
+                    setTimeout(atualizarContador, 1000); 
+
+                } 
+            }
+
+            atualizarContador();
+
             setTimeout(function(){
                 window.location.href = "../index.html"
             }, 5000)
+
         </script>
         
     </body>
