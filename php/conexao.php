@@ -17,8 +17,7 @@ $conexao = new mysqli($servername, $username, $password, $database, $port);
 // Verifica erro
 if ($conexao->connect_error) {
     die("Erro na conexão: " . $conexao->connect_error);
-}else{
-    echo "Funcionando!";
 }
+return $conexao;
 
 ?>
